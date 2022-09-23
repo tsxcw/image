@@ -27,6 +27,11 @@ def main2(width, path):
     return Response(status=404)
 
 
+@app.get('/status')
+def status():
+    return "ok"
+
+
 # 按间距中的绿色按钮以运行脚本。
 # if __name__ == '__main__':
 #     app.run(port=9999, host='0.0.0.0', debug=config.env('debug', False), threaded=False, processes=True)
