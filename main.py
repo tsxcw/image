@@ -33,8 +33,8 @@ def status():
 
 
 # 按间距中的绿色按钮以运行脚本。
-# if __name__ == '__main__':
-#     app.run(port=9999, host='0.0.0.0', debug=config.env('debug', False), threaded=False, processes=True)
+if __name__ == '__main__':
+    app.run(port=9999, host='0.0.0.0', debug=config.env('debug', False), threaded=False, processes=True)
 # else:
-server = pywsgi.WSGIServer(('0.0.0.0', 9999), app)
-server.serve_forever()
+# server = pywsgi.WSGIServer(('0.0.0.0', 9999), app)
+# server.serve_forever()

@@ -43,7 +43,7 @@ def resize(path, width=0):
     except Exception:
         pass
 
-    if not (util.checkFile(realRootPath(path))):
+    if not (util.checkFile(realRootPath(path))):  # 检查文件是否存在
         return False
 
     if width == 0:
@@ -57,8 +57,11 @@ def resize(path, width=0):
     except FileNotFoundError as error:
         return False
 
-    img.thumbnail((width, width))
-    createDir(path)
-    file = f"{cacheExis(getCachePath(path, width))}"
-    img.save(file)
-    return file
+    h = int(img.height / (img.width / width))
+    # img.thumbnail((width, width))
+    img = img.resize((width, h))
+    createDir(path)  # 创建缓存写入文件夹
+
+    file = f"{cacheExis(getCachePath(path, width))}"  # 组装缓存地址文件路径
+    img.save(file)  # 写入图片
+    return file  # 返回文件地址

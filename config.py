@@ -6,7 +6,7 @@ js = {}
 
 
 def init():
-    global js;
+    global js
     if util.checkFile('./config.json'):
         f = open('./config.json', 'br').read().decode('utf-8')
         try:

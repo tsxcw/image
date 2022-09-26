@@ -1,7 +1,7 @@
 {
-  "rootDir": "D:/BaiduNetdiskDownload/4K/4K/",
+  "rootDir": "D:/phpstudy_pro/WWW/zaituNav/public/",
   "cache": "./cache/",
   "openCache": false,
   "openResize": true,
-  "debug": false
+  "debug": true
 }
