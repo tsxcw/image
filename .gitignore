@@ -1,2 +1,5 @@
 /venv/
 .idea
+build
+config.json
+cache

@@ -7,6 +7,11 @@ import imgcv
 app = Flask(__name__)
 
 
+@app.get('/RunStatus')
+def status():
+    return "ok"
+
+
 @app.get("/<path:path>")
 def print_hi(path):
     w = int(request.args.get('width', 0))
@@ -25,11 +30,6 @@ def main2(width, path):
     if p:
         return send_file(p)
     return Response(status=404)
-
-
-@app.get('/status')
-def status():
-    return "ok"
 
 
 # 按间距中的绿色按钮以运行脚本。
