@@ -3,7 +3,7 @@
   "cache": "./cache/",
   "openCache": false,
   "openResize": true,
-  "debug": true,
+  "debug": false,
   "width": [
     350,
     400,
