@@ -28,7 +28,7 @@ python main.py
 
 #访问
 * 程序占用9999端口，需要占用其他请求该main.py
-* 第一种访问方式 http://127.0.0.1:9999/**filePath**?width=350
+* 第一种访问方式 http://127.0.0.1:9999/** filePath **?width=350
 * 第二种访问方式 http://127.0.0.1:9999/350/<filePath>
 
 
