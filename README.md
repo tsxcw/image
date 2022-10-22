@@ -17,7 +17,7 @@ pip3 install -r requirements.txt
     600,
     900
   ],
-  "originalImage": true //true可以保护原图不被访问
+  "originalImage": true //true允许访问原图
 }
 
 ```
